@@ -4,12 +4,26 @@
 
 # COMMAND ----------
 
+dbutils.widgets.help()
+
+# COMMAND ----------
+
 dbutils.widgets.text("p_data_source", "")
 v_data_source = dbutils.widgets.get("p_data_source")
 
 # COMMAND ----------
 
-# MAGIC %run "../3.includes/a_configuration"
+v_data_source
+#  or --> print(v_data_source)
+
+# COMMAND ----------
+
+# MAGIC %run 
+# MAGIC "../3.includes/a_configuration"
+
+# COMMAND ----------
+
+raw_folder_path
 
 # COMMAND ----------
 
@@ -82,6 +96,7 @@ circuits_renamed_df = circuits_selected_df.withColumnRenamed("circuitId", "circu
 
 # COMMAND ----------
 
+# we invoke the function add_ingestion_date --> which takes the 
 circuits_final_df = add_ingestion_date(circuits_renamed_df)
 
 # COMMAND ----------

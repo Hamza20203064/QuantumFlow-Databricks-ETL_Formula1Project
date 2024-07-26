@@ -2,7 +2,7 @@
 raw_folder_path = "/mnt/formula1dlhamza/raw"
 processed_folder_path = "/mnt/formula1dlhamza/processed"
 presentation_folder_path = "/mnt/formula1dlhamza/presentation"
-# these thing are used to avoide har codes means remove repited codes.
+# these thing are used to avoide hoted codes means remove repited codes.
 
 # COMMAND ----------
 
